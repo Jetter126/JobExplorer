@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Job Explorer | {% block head %}{% endblock %}</title>
+</head>
+
+<body>
+    <style>
+        .logo:after {
+            color: #0072b1;
+            content: "Explorer";
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light border">
+
+        <a href="/" style="color: black; text-decoration: none;">
+            <h1 class="display-3 logo">&nbsp;&nbsp;Job</h1>
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <hr class="my-2">
+
+        <ul class="navbar-nav ms-auto mt-0" style="font-size: 22px;">
+            <li class="nav-item"><a class="nav-link me-4" href="/">Home</a></li>
+        </ul>
+    </nav>
+
+    {% block body %}{% endblock %}
+
+    <br><br><br>
+
+    <div class="footer bg-light border"
+        style="display: flex; position: fixed; bottom: 0; text-align: center; width: 100%; height: 10%;">
+        <p style="margin: auto;">Made by Ved Prasad, 2023.</p>
+    </div>
+</body>
+
+</html>
